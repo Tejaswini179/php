@@ -4,10 +4,10 @@ error_reporting (E_ALL ^ E_NOTICE);
 $conn = new mysqli("localhost","root","","task1") or die("Unable To Connect");
 // if($conn) echo "Connected successfully";
 
-$sql ="INSERT INTO User1(First_Name,Last_Name,DOB,Email) VALUES('".$_POST ['First_Name']."','".$_POST['Last_Name']."','".$_POST['DOB']."','".$_POST['Email']."')";
+$sql ="INSERT INTO user(First_Name,Last_Name,DOB,Email) VALUES('".$_POST ['First_Name']."','".$_POST['Last_Name']."','".$_POST['DOB']."','".$_POST['Email']."')";
 $conn ->query($sql);
 
-$sql = "SELECT * FROM User1 ";
+$sql = "SELECT * FROM user ";
 $result = $conn->query($sql);
 $conn->close();
 
@@ -60,7 +60,7 @@ $conn->close();
 
         .container-table{
             text-align: center;
-            align-item : center;
+         
         }
       
     </style>
