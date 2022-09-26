@@ -20,7 +20,12 @@ for($x = 0; $x < $arrlength; $x++) {
   echo $cars[$x];
   echo "<br>";
 }
+  // for counting array length we can use count()
+  echo count($cars)
+
 ?>
 <br>
+
+
 
 <!-- PHP Associative Arrays -->
